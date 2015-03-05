@@ -1,0 +1,7 @@
+[
+  { "Id": "10ef3df8-5ec6-46ed-95f1-1e6d119318e4", "CustomerId": "a18a479a-1a40-463f-8f82-a6d6666b0839", "Name": "Annonser" },
+  { "Id": "c99245d7-a208-4b2b-a18f-3ed61d552418", "CustomerId": "a18a479a-1a40-463f-8f82-a6d6666b0839", "Name": "Grundsättning" },
+  { "Id": "1e3be733-9516-4a36-9cc4-735ef0fbfaf8", "CustomerId": "a18a479a-1a40-463f-8f82-a6d6666b0839", "Name": "XML" },
+  { "Id": "e975669f-1b56-4c46-b217-548a00a259cc", "CustomerId": "a18a479a-1a40-463f-8f82-a6d6666b0839", "Name": "Ändringar mot manus" },
+  { "Id": "4dcd8edc-419a-4454-b288-db57d53834b5", "CustomerId": "a18a479a-1a40-463f-8f82-a6d6666b0839", "Name": "Övrigt" }
+]

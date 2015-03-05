@@ -1,0 +1,218 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Aiiiii!</title>
+		<link rel="stylesheet" href="/styles/bootstrap.min.css">
+		<link rel="stylesheet" href="/styles/baseline.reset.css">
+		<link rel="stylesheet" href="/styles/baseline.base.css">
+		<link rel="stylesheet" href="/styles/baseline.type.css">
+		<link rel="stylesheet" href="/styles/site.css">
+		
+		<script src="/scripts/modernizr.js"></script>
+		<script src="/scripts/jquery-1.11.2.min.js"></script>
+		<script src="/scripts/angular.min.js"></script>
+		<script src="/scripts/bootstrap.min.js"></script>
+		<script>
+!function(a){"use strict";a(function(){var b=a(window),c=a(document.body);c.scrollspy({target:".bs-docs-sidebar"}),b.on("load",function(){c.scrollspy("refresh")}),a(".bs-docs-container [href=#]").click(function(a){a.preventDefault()}),setTimeout(function(){var b=a(".bs-docs-sidebar");b.affix({offset:{top:function(){var c=b.offset().top,d=parseInt(b.children(0).css("margin-top"),10),e=a(".bs-docs-nav").height();return this.top=c-e-d},bottom:function(){return this.bottom=a(".bs-docs-footer").outerHeight(!0)}}})},100),setTimeout(function(){a(".bs-top").affix()},100),function(){var b=a("#bs-theme-stylesheet"),c=a(".bs-docs-theme-toggle"),d=function(){b.attr("href",b.attr("data-href")),c.text("Disable theme preview"),localStorage.setItem("previewTheme",!0)};localStorage.getItem("previewTheme")&&d(),c.click(function(){var a=b.attr("href");a&&0!==a.indexOf("data")?(b.attr("href",""),c.text("Preview theme"),localStorage.removeItem("previewTheme")):d()})}(),a(".tooltip-demo").tooltip({selector:'[data-toggle="tooltip"]',container:"body"}),a(".popover-demo").popover({selector:'[data-toggle="popover"]',container:"body"}),a(".tooltip-test").tooltip(),a(".popover-test").popover(),a(".bs-docs-popover").popover(),a("#loading-example-btn").on("click",function(){var b=a(this);b.button("loading"),setTimeout(function(){b.button("reset")},3e3)}),a("#exampleModal").on("show.bs.modal",function(b){var c=a(b.relatedTarget),d=c.data("whatever"),e=a(this);e.find(".modal-title").text("New message to "+d),e.find(".modal-body input").val(d)}),a(".bs-docs-activate-animated-progressbar").on("click",function(){a(this).siblings(".progress").find(".progress-bar-striped").toggleClass("active")}),ZeroClipboard.config({moviePath:"/assets/flash/ZeroClipboard.swf",hoverClass:"btn-clipboard-hover"}),a(".highlight").each(function(){var b='<div class="zero-clipboard"><span class="btn-clipboard">Copy</span></div>';a(this).before(b)});var d=new ZeroClipboard(a(".btn-clipboard")),e=a("#global-zeroclipboard-html-bridge");d.on("load",function(){e.data("placement","top").attr("title","Copy to clipboard").tooltip()}),d.on("dataRequested",function(b){var c=a(this).parent().nextAll(".highlight").first();b.setText(c.text())}),d.on("complete",function(){e.attr("title","Copied!").tooltip("fixTitle").tooltip("show").attr("title","Copy to clipboard").tooltip("fixTitle")}),d.on("noflash wrongflash",function(){e.attr("title","Flash required").tooltip("fixTitle").tooltip("show")})})}(jQuery);
+		</script>
+	</head>
+	<body>
+		
+		<div class="container">
+			<div class="row" style="display: flex;">
+				<div class="col-xs-3" style="background-color: #999;">
+					<nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix-top">
+            <ul class="nav bs-docs-sidenav">
+							<li class="">
+								<a href="#glyphicons">Glyphicons</a>
+								<ul class="nav">
+									<li class=""><a href="#glyphicons-glyphs">Available glyphs</a></li>
+									<li><a href="#glyphicons-how-to-use">How to use</a></li>
+									<li><a href="#glyphicons-examples">Examples</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="#dropdowns">Dropdowns</a>
+								<ul class="nav">
+									<li><a href="#dropdowns-example">Example</a></li>
+									<li><a href="#dropdowns-alignment">Alignment</a></li>
+									<li><a href="#dropdowns-headers">Headers</a></li>
+									<li><a href="#dropdowns-divider">Divider</a></li>
+									<li><a href="#dropdowns-disabled">Disabled menu items</a></li>
+								</ul>
+							</li>
+            </ul>
+          </nav>
+					
+				</div>
+				<div class="col-xs-5">
+				
+					<h1>Title – h1</h1>
+					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+					<p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+					<h2>Subtitle — h2</h2>
+					<p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+					<p>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+					<h3>Subtitle — h3</h3>
+					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+					<p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+					<h4>Subtitle — h4</h4>
+					<p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+					<p>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+					<h5>Subtitle — h5</h5>
+					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+					<p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+					<h6>Subtitle — h6</h6>
+					<p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+					<p>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+					<ul>
+						<li>List item 01</li>
+						<li>List item 02</li>
+						<li>List item 03</li>
+					</ul>
+					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+					<p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+					<blockquote cite="http://stephanecurzi.me">
+						<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+					</blockquote>
+					<p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+					<p>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+					<hr>
+					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+					<p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+				
+					<h2>List Types</h2>
+					<h3>Ordered list</h3>
+					<ol>
+						<li>List item</li>
+						<li>List item</li>
+						<li>List item
+							<ol>
+								<li>List item level 2</li>
+								<li>List item level 2
+									<ol>
+										<li>List item level 3</li>
+										<li>List item level 3</li>
+									</ol>
+								</li>
+							</ol>
+						</li>
+					</ol>						
+					<h3>Unordered list</h3>
+					<ul>
+						<li>List item 01</li>
+						<li>List item 02</li>
+						<li>List item 03
+							<ul>
+								<li>List item level 2</li>
+								<li>List item level 2
+									<ul>
+										<li>List item level 3</li>
+										<li>List item level 3</li>
+									</ul>
+								</li>
+					
+							</ul>
+						</li>
+					</ul>
+					<h3>Definition List</h3>
+					<dl>
+						<dt>Definition list title</dt>
+						<dd>Definition list data</dd>
+						<dt>Definition list title</dt>
+						<dd>Definition list data</dd>
+						<dt>Definition list title</dt>
+						<dd>Definition list data</dd>
+					</dl>
+					<h3>Dialog</h3>
+					<dialog>
+						<dt> Costello</dt>
+						<dd> Look, you gotta first baseman?</dd>
+						<dt> Abbott</dt>
+						<dd> Certainly.</dd>
+						<dt> Costello</dt>
+						<dd> Who's playing first?</dd>
+						<dt> Abbott</dt>
+						<dd> That's right.</dd>
+						<dt> Costello</dt>
+						<dd> When you pay off the first baseman every month, who gets the money?</dd>
+						<dt> Abbott</dt>
+						<dd> Every dollar of it.</dd>
+					</dialog>
+					<h2>Blockquote</h2>
+					<blockquote cite="http://stephanecurzi.me">
+						<p>Duis autem vel eum iriure dolor in hendrerit in <q>vulputate velit esse molestie consequat</q>, vel illum dolore eu feugiat nulla facilisis.</p>
+					</blockquote>
+					<h2>Tables</h2>
+					<table>
+						<caption>table title</caption>
+						<thead>
+							<tr>
+								<th>Table header 1</th>
+								<th>Table header 2</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Table row 1, data 1</td>
+								<td>Table row 1, data 2</td>
+							</tr>
+							<tr>
+								<td>Table row 2, data 1</td>
+								<td>Table row 2, data 2</td>
+							</tr>
+						</tbody>
+						<tfoot>
+							<tr>
+								<td>Table footer, data 1</td>
+								<td>Table footer, data  2</td>
+							</tr>
+						</tfoot>			
+					</table>
+					<h2>Other markup code</h2>
+					<p><a href="">hyperlink</a><br>
+						<abbr title="title">abbreviation</abbr><br>
+						<b>offset text typically styled in bold</b><br>
+						<cite>cited title of a work</cite><br>
+						<code>code fragment</code><br>
+						<del>deleted text</del><br>
+						<dfn title="title">defining instance</dfn><br>
+						<em>emphatic stress</em><br>
+						<i>offset text typically styled in italic</i><br>
+						<ins>inserted text</ins><br>
+						<kbd>user input</kbd><br>
+						<mark>marked (highlighted) text</mark><br>
+						<samp>sample output</samp><br>
+						<small>small print</small><br>
+						<strong>strong importance</strong><br>
+						<sup>superscript</sup> <sub>subscript</sub><br>
+						<var>variable or placeholder text</var></p>
+					<address>contact information</address>
+					<pre>preformatted text</pre>
+					<p>soft hyphen : <code>&amp;shy; or &amp;#173;</code></p>
+					<h2>White space</h2>
+					<ul class="white-space">
+						<li><span class="width1 description">en space : <code>&amp;#8194;</code></span> <span class="space-width"> </span></li>
+						<li><span class="width1 description">em space : <code>&amp;#8195;</code></span> <span class="space-width"> </span></li>
+						<li><span class="width1 description">3-per-em space : <code>&amp;#8196;</code></span> <span class="space-width"> </span></li>
+						<li><span class="width1 description">4-per-em space : <code>&amp;#8197;</code></span> <span class="space-width"> </span></li>
+						<li><span class="width1 description">6-per-em space : <code>&amp;#8198;</code></span> <span class="space-width"> </span></li>
+						<li><span class="width1 description">figure space : <code>&amp;#8199;</code></span> <span class="space-width">?</span></li>
+						<li><span class="width1 description">punctuation space : <code>&amp;#8200;</code></span> <span class="space-width">?</span></li>
+						<li><span class="width1 description">thin space : <code>&amp;#8201;</code></span> <span class="space-width">?</span></li>
+						<li><span class="width1 description">hair space : <code>&amp;#8202;</code></span> <span class="space-width">?</span></li>
+					</ul>
+				</div>
+				
+				<div class="col-xs-4" style="background-color: #f1f1f1;">
+					
+				</div>
+				
+			</div>
+			
+		</div>
+		
+	</body>
+</html>
